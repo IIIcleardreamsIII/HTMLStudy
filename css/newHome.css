@@ -3,16 +3,16 @@ body {
     font-size: 14px;
     line-height: 1.6;
     color: #24292e;
-    background-color: #fff;
+    background-color: #000000;
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #24292e;
+    background-color: #090808;
     color: #fff;
-    padding: 8px 10px;
+    padding: 8px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,29 +26,34 @@ header {
 nav {
     display: flex;
     align-items: center;
+    margin-left: 16px;
+    width: 50%;
 }
 
 nav a {
     color: #fff;
     margin-left: 16px;
     text-decoration: none;
+    margin-right: 16px;
 }
 
 .repositories {
     display: flex;
     margin-top: 64px;
+    background-color: #333333;
 }
 
 .repository-list {
     width: 240px;
-    border-right: 1px solid #e1e4e8;
     padding: 16px;
-    box-sizing: border-box;
+    position: fixed;
+
 }
 
 .repository-list h2 {
     font-size: 16px;
     margin-bottom: 8px;
+    color: #ffffff;
 }
 
 .repository-list ul {
@@ -63,15 +68,74 @@ nav a {
 
 .repository-list a {
     color: #0366d6;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .repository-list a:hover {
     text-decoration: underline;
 }
-
+.repository-activity{
+    background-color: #000000;
+    color: #fff;
+    border: 2px dotted #ffffff;
+    margin-top: 16px;
+}
+.repository-activity p{
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: rgb(150, 149, 149);
+}
 .content {
-    margin-left: 260px;
     padding: 16px;
     box-sizing: border-box;
+    background-color: #333333;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(245, 245, 245, 0.15);
+    margin-left: 270px;
+}
+.content h1{
+    font-size: 35px;
+    color: #fff;
+}
+.content h2{
+    font-size: 25px;
+    font-style: italic;
+}
+.specific-content{
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: #090808;
+    color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(245, 245, 245, 0.15);
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-input {
+    display: inline-block;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    background-color: #333333;
+}
+
+.search-button {
+    display: inline-block;
+    background-color: #090808;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #000000;
 }
