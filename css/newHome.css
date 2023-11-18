@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #24292e;
+    background-color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #24292e;
+    color: #fff;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 16px;
+    text-decoration: none;
+}
+
+.repositories {
+    display: flex;
+    margin-top: 64px;
+}
+
+.repository-list {
+    width: 240px;
+    border-right: 1px solid #e1e4e8;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.repository-list h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.repository-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.repository-list li {
+    margin-bottom: 8px;
+}
+
+.repository-list a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.repository-list a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 16px;
+    box-sizing: border-box;
+}
