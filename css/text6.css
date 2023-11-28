@@ -1,0 +1,45 @@
+#box-small{
+    position:relative;
+    top:0;
+    left:0;
+    width:600px;
+    height:600px;
+}
+#box-big{
+    overflow: hidden;
+    position: relative;
+    display: none;
+    width: 600px;
+    height: 600px;
+    top: 0;
+    left: 0;
+}
+#img-small{
+    width:600px;
+    height:600px;
+    top: 0;
+    left: 0;
+}
+#img-big{
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+#mouse{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    width:80px;
+    height:80px;
+    background: #3e3e3e;
+    opacity: 0.3;
+    cursor:move;
+    z-index: 999;
+}
+.box{
+    display: flex;
+}

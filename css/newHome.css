@@ -154,6 +154,24 @@ nav a {
     width: 100%;
     height: 50%;
     z-index: 998;
+/*优先级设置需要特别注意，如果设置的过高，会覆盖其他元素，并且会影响js动画的实现，
+    要是给boxx设置了 z-index: 999， 那么动画就不会执行了*/
+}
+#under{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    z-index: 998;
+}
+#img{
+    position: absolute;
+    width: 500px;
+}
+#box1{
+    position: absolute;
+    width: 100%;
+    height: 50%;
 }
 #under{
     position: absolute;

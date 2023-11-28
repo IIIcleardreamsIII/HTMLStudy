@@ -8,7 +8,7 @@ top1.onmouseover = function () {
     timer = setInterval(up, 10);
     console.log("上面");
     function up () {
-        num -= 3;
+        num -= 2;
         num >= (-2499+700) ? (img.style.top = num + "px") : (clearInterval(timer))
     }
 }
