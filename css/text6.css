@@ -2,8 +2,8 @@
     position:relative;
     top:0;
     left:0;
-    width:600px;
-    height:600px;
+    width:513px;
+    height:623px;
 }
 #box-big{
     overflow: hidden;
@@ -15,15 +15,15 @@
     left: 0;
 }
 #img-small{
-    width:600px;
-    height:600px;
+    width:513px;
+    height:623px;
     top: 0;
     left: 0;
 }
 #img-big{
     position: absolute;
-    width: 1200px;
-    height: 1200px;
+    width: 1026px;
+    height: 1246px;
     top: 0;
     left: 0;
     object-fit: cover;
