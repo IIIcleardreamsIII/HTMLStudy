@@ -43,3 +43,15 @@
 .box{
     display: flex;
 }
+.thumbnail{
+    margin-left: 150px;
+    margin-top: 50px;
+}
+#img-small1-th{
+    width: 100px;
+    height: 100px;
+}
+#img-small2-th{
+    width: 100px;
+    height: 100px;
+}
