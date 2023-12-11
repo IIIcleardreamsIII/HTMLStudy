@@ -1,0 +1,54 @@
+.carousel{
+    position: relative;
+    width:440px;
+    height: 512.638px;
+    margin: auto;
+    overflow: hidden;
+}
+#img-carousel{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #717171;
+    transform: scale(1.2); /* 添加缩放效果 */
+    transition: background-color 0.6s ease, transform 0.6s ease; /* 添加 transform 过渡效果 */
+}
