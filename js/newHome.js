@@ -1,3 +1,4 @@
+//长图特效
 var boxx = document.getElementById("boxx");
 var top1 = document.getElementById("top1");
 var img = document.getElementById("img");
@@ -23,6 +24,8 @@ under.onmouseover = function () {
 boxx.onmouseout = function () {
     clearInterval(timer);
 }
+//广告特效
+var intervalId;
 document.addEventListener("DOMContentLoaded", function(){
     var advertisement1 = document.querySelector("#advertisement1");
     setTimeout(function (){
@@ -32,9 +35,41 @@ document.addEventListener("DOMContentLoaded", function(){
     closeBtn.addEventListener("click", function(){
         advertisement1.style.display = "none";
     });
-    var goOn = document.querySelector(".go-on");
+    var goOn = document.querySelector(".go-on"), random;
     goOn.addEventListener("click", function(){
-        //跳转到login
-        // window.location.href = "login.html";
+        window.location.href = "text6.html";
     });
+
+    var speedX = 0.5; // 水平移动速度
+    var speedY = 0.2; // 垂直移动速度
+
+    function moveAd() {
+        var currentLeft = parseFloat(advertisement1.style.left) || 0;
+        var currentTop = parseFloat(advertisement1.style.top) || 0;
+
+        var newLeft = currentLeft + speedX;
+        var newTop = currentTop + speedY;
+
+        // 如果广告碰到窗口边缘，则反向移动
+        if (newLeft + advertisement1.offsetWidth > window.innerWidth || newLeft < 0) {
+            speedX = -speedX;
+        }
+        if (newTop + advertisement1.offsetHeight > window.innerHeight || newTop < 0) {
+            speedY = -speedY;
+        }
+
+        advertisement1.style.left = newLeft + 'px';
+        advertisement1.style.top = newTop + 'px';
+
+        requestAnimationFrame(moveAd); // 递归调用，创建平滑动画
+    }
+
+    moveAd(); // 启动动画
+
+    advertisement1.onmouseover = function(){
+        clearInterval(intervalId);
+    }
+    advertisement1.onmouseout = function(){
+        intervalId = setInterval(updateAdPosition, 1000);
+    }
 })

@@ -192,9 +192,9 @@ nav a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 300px;
+    width: 200px;
     height: 100px;
-    background-color: #f0f0f0;
+    background-color: rgba(240, 240, 240, 0.35);
     padding: 10px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -222,6 +222,7 @@ nav a {
     padding: 5px 10px;
     cursor: pointer;
     float: right;
+    display: inline-block;
 }
 .go-on{
     background-color: #333;
@@ -230,4 +231,12 @@ nav a {
     padding: 5px 10px;
     cursor: pointer;
     float: right;
+    display: inline-block;
+}
+.advertisement-p{
+    display: inline-block;
+    color: #fff;
+}
+.hello{
+    z-index: 999;
 }
