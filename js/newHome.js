@@ -25,7 +25,7 @@ boxx.onmouseout = function () {
     clearInterval(timer);
 }
 //广告特效
-var intervalId;
+var animationId ;
 document.addEventListener("DOMContentLoaded", function(){
     var advertisement1 = document.querySelector("#advertisement1");
     setTimeout(function (){
@@ -61,15 +61,15 @@ document.addEventListener("DOMContentLoaded", function(){
         advertisement1.style.left = newLeft + 'px';
         advertisement1.style.top = newTop + 'px';
 
-        requestAnimationFrame(moveAd); // 递归调用，创建平滑动画
+        animationId = requestAnimationFrame(moveAd); // 递归调用，创建平滑动画
     }
 
     moveAd(); // 启动动画
 
     advertisement1.onmouseover = function(){
-        clearInterval(intervalId);
+        cancelAnimationFrame(animationId );
     }
     advertisement1.onmouseout = function(){
-        intervalId = setInterval(updateAdPosition, 1000);
+        moveAd()
     }
-})
+});
