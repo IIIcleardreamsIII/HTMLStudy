@@ -26,29 +26,29 @@
     <h1>Sign in to GitHub</h1> <!-- 创建一个一级标题，标题为"login"，用于显示登录页面标题 -->
     <div>
         <label for="username">Username:</label> <!-- 创建一个文本标签，用于描述用户名输入框 -->
-        <input type="text" id="username" /> <!-- 创建一个文本输入框，其ID为"username" -->
+        <input type="text" id="username" value="admin"/> <!-- 创建一个文本输入框，其ID为"username" -->
     </div>
 
     <div>
         <label for="Password">Password:</label> <!-- 创建一个文本标签，用于描述密码输入框 -->
-        <input type="password" id="Password" /> <!-- 创建一个密码输入框，其ID为"Password" -->
+        <input type="password" id="password" value="24823yaj"/> <!-- 创建一个密码输入框，其ID为"Password" -->
     </div>
 
-    <div>
-        <label for="E-Mail">E-Mail:</label> <!-- 创建一个文本标签，用于描述电子邮件输入框 -->
-        <input type="email" id="E-Mail"> <!-- 创建一个电子邮件输入框，其ID为"E-Mail" -->
+<!--    <div>-->
+<!--        <label for="e-mail">E-Mail:</label> &lt;!&ndash; 创建一个文本标签，用于描述电子邮件输入框 &ndash;&gt;-->
+<!--        <input type="email" id="e-mail"> &lt;!&ndash; 创建一个电子邮件输入框，其ID为"E-Mail" &ndash;&gt;-->
 
-        <label>
-            <select> <!-- 创建一个下拉菜单 -->
-                <option>@qq.com</option> <!-- 下拉菜单中的选项 -->
-                <option>@163.com</option>
-                <option>@Gmail.com</option>
-            </select>
-        </label>
-    </div>
+<!--        <label>-->
+<!--            <select> &lt;!&ndash; 创建一个下拉菜单 &ndash;&gt;-->
+<!--                <option>@qq.com</option> &lt;!&ndash; 下拉菜单中的选项 &ndash;&gt;-->
+<!--                <option>@163.com</option>-->
+<!--                <option>@Gmail.com</option>-->
+<!--            </select>-->
+<!--        </label>-->
+<!--    </div>-->
 
     <div>
-        <input type="button" value="Sign in" />
+        <input type="button" value="Sign in" onclick="login()" />
     </div>
 </form>
 </div>

@@ -44,7 +44,7 @@ nav a {
 
 .repositories {
     display: flex;
-    margin-top: 64px;
+    margin-top: 110px;
     background-color: #333333;
 
 }
@@ -200,6 +200,7 @@ nav a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     transition: right 0.5s ease-in-out;
+    z-index: 1000;
 }
 
 .advertisement:hover {

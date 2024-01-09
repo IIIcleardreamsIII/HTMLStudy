@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
     var goOn = document.querySelector(".go-on"), random;
     goOn.addEventListener("click", function(){
-        window.location.href = "text6.html";
+        window.location.href = "magnifier.html";
     });
 
     var speedX = 0.5; // 水平移动速度
@@ -72,4 +72,29 @@ document.addEventListener("DOMContentLoaded", function(){
     advertisement1.onmouseout = function(){
         moveAd()
     }
+});
+document.addEventListener("DOMContentLoaded", function() {
+    var header = document.querySelector("header");
+    var repositories = document.querySelector(".repositories");
+
+    // 获取header的初始位置
+    var initialHeaderTop = header.offsetTop;
+
+    // 监听滚动事件
+    window.addEventListener("scroll", function() {
+        // 获取当前滚动位置
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // 如果滚动位置超过了header的初始位置，将header设为固定定位
+        if (scrollTop > initialHeaderTop) {
+            header.style.position = "fixed";
+            header.style.top = "0";
+            repositories.style.marginTop = header.offsetHeight + "px"; // 调整repositories的margin-top
+        } else {
+            // 恢复初始样式
+            header.style.position = "fixed";
+            header.style.top = initialHeaderTop + "px";
+            repositories.style.marginTop = "0";
+        }
+    });
 });

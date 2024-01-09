@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var currentImageIndex = 0;
 
-    function updateImage() {
+    function updateImage() {//通过索引获取图片路径，通过更改索引从而轮播图片
         carousel_img.src = imgPaths[currentImageIndex];
     }
 
@@ -58,4 +58,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 初始启动自动轮播
     startAutoCarousel();
+
+
 });
+function login(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    // var email = document.getElementById("email").value;
+    if (username == "admin" && password == "24823yaj") {
+        window.location.href = "newHome.html";
+    } else {
+        alert("用户名或密码错误");
+    }
+}

@@ -67,8 +67,12 @@ th1.onclick = function(){
 th2.onclick = function(){
     updateImg2(imgPaths);
 }
-/*图片切换的总体思路为把图片路径存入数组，然后在点击按钮的时候，根据点击的按钮的序号，
-将数组中的图片路径进行替换，然后再将图片路径赋值给img标签，这样就实现了图片的切换。**/
+/*图片切换的总体思路为把图片路径存入数组，
+然后在点击按钮的时候，
+根据点击的按钮的序号，
+将数组中的图片路径进行替换，
+然后再将图片路径赋值给img标签，
+这样就实现了图片的切换。**/
 var back = document.querySelector(".back")
  back.onclick = function(){
     window.location.href = 'newHome.html';
